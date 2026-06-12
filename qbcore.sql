@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `bank_accounts` (
   `account_name` VARCHAR(50) DEFAULT NULL,
   `account_balance` INT(11) NOT NULL DEFAULT 0,
   `account_type` ENUM('shared','job','gang') NOT NULL,
-  `users` LONGTEXT DEFAULT '[]',
+  `users` LONGTEXT
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE KEY `account_name` (`account_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
@@ -219,7 +219,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `gang` TEXT DEFAULT NULL,
   `position` TEXT NOT NULL,
   `metadata` TEXT NOT NULL,
-  `inventory` LONGTEXT DEFAULT NULL,
+  `inventory` TEXT,
   `last_updated` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP() ON UPDATE CURRENT_TIMESTAMP(),
   PRIMARY KEY (`citizenid`),
   KEY `id` (`id`),
