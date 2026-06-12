@@ -8,7 +8,7 @@ description: An advanced FiveM RP framework including jobs, gangs, housing & mor
 tasks:
   #  Download Base Files
   - action: download_github
-    src: https://github.com/mullberndt321-svg/qbcore
+    src: https://github.com/qbcore-framework/txAdminRecipe
     ref: main
     dest: ./tmp/qbcore
 
