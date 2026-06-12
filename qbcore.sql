@@ -14,8 +14,8 @@ CREATE TABLE IF NOT EXISTS `bank_accounts` (
   `account_name` VARCHAR(50) DEFAULT NULL,
   `account_balance` INT(11) NOT NULL DEFAULT 0,
   `account_type` ENUM('shared','job','gang') NOT NULL,
-  `users` LONGTEXT
-  PRIMARY KEY (`id`) USING BTREE,
+  `users` LONGTEXT,
+  PRIMARY KEY (`id`),
   UNIQUE KEY `account_name` (`account_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
