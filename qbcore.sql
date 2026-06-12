@@ -1,4 +1,4 @@
-USE `qbcore`;
+USE `sql7830242`;
 
 -- PLAYERS
 CREATE TABLE IF NOT EXISTS `players` (
