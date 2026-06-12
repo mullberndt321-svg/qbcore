@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS `apartments` (
   `id` INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   `name` VARCHAR(255) DEFAULT NULL,
-  `type` VARCHAR(255) DEFAULT NULL,
+  `type` VARCHAR(255),
   `label` VARCHAR(255) DEFAULT NULL,
   `citizenid` VARCHAR(11) DEFAULT NULL,
   KEY `citizenid` (`citizenid`),
