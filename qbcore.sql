@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `bank_accounts` (
 CREATE TABLE IF NOT EXISTS `bank_statements` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `citizenid` VARCHAR(11) DEFAULT NULL,
-  `account_name` VARCHAR(50) DEFAULT ('checking'),
+  `account_name` VARCHAR(50) DEFAULT 'checking'),
   `amount` INT(11) DEFAULT NULL,
   `reason` VARCHAR(50) DEFAULT NULL,
   `statement_type` ENUM('deposit','withdraw') DEFAULT NULL,
